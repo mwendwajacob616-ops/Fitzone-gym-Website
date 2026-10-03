@@ -9,80 +9,87 @@
         <title>Fitzone Fitness Centre</title>
     </head>
     <body>
-        <h2>FITZONE</h2>
+        <h2 id="logo">FITZONE</h2>
 <header>
     <nav>
-        <ul>
-            <li><a href='#home'>Home</a></li>
-            <li><a href='#about'>About</a></li>
-            <li><a href='#services'>Services</a></li>
-            <li><a href='#membership'>Membership</a></li>
-            <li><a href='#trainers'>Trainers</a></li>
-            <li><a href='#contacts'>Contacts</a></li>
+        <button id="menuBtn">☰</button>
+        <ul id="navMenu">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#membership" class="nav-link">Membership</a></li>
+            <li><a href="#trainers" class="nav-link">Trainers</a></li>
+            <li><a href="#contacts" class="nav-link">Contacts</a></li>
         </ul>
     </nav>
 </header>
 <section class="hero" id="home">
-<h1>BUILD YOUR STRONGEST SELF</h1>
-<p>Train harder. Live stronger. Become better</p>
-<a href="#" class="hero-btn">JOIN FITZONE</a>
+<h1 id="heroTitle">BUILD YOUR STRONGEST SELF</h1>
+<p id="heroText">Train harder. Live stronger. Become better</p>
+<a href="#" class="hero-btn" id="joinBtn">JOIN FITZONE</a>
 </section>
 <section class="about" id="about">
-    <h2>About Fitzone</h2>
-    <p>Welcome to Fitzone! We are a state-of-the-art fitness centre dedicated to
+    <h2 id="aboutTitle">About Fitzone</h2>
+    <p id="aboutText">Welcome to Fitzone! We are a state-of-the-art fitness centre dedicated to
          helping you achieve your health and wellness goals.
-          Our modern facilities and expert trainers are here to support you on your fitness journey.</p>
-    <p>Whether you are a beginner or an experienced athlete, 
-        we have the resources and the suppport you need to help reach your goals.</p>      
+          Our modern facilities and expert trainers are here to support you on your fitness journey.
+    Whether you are a beginner or an experienced athlete, 
+        we have the resources and the suppport you need to help reach your goals.</p>   
+        <button class="about-btn" id="aboutBtn">Learn More</button>   
 </section>
 <div class="services" id="services">
-    <h2>Our Services</h2>
-    <p>At Fitzone, we offer a wide range of services to meet your fitness needs.</p>
+    <h2 id="servicesTitle">Our Services</h2>
+    <p id="servicesText">At Fitzone, we offer a wide range of services to meet your fitness needs.</p>
 </div>
-<div class="trainers" id="trainers">
+<div class="container">
+<section class="trainers" id="trainers">
     <h2>Meet Our Trainers</h2>
     <p>Our team of certified trainers is here to guide you on your fitness journey.</p>
     <div class="trainer-image"></div>
     <h3>Jeff Luthar and Calvin Bob</h3>
     <p>Srength training and nutritionist</p>
+</section>
 </div>
 
 <section class="membership" id="membership">
     <h2>MEMBERSHIP PLANS</h2>
     <p>We offer flexible membership plans to suit your needs.</p>
-    <div class="plan featured">
+    <div class="plan featured" id="premiumPlan">
         <h3>PREMIUM</h3>
         <h4>KSH 2,000/MONTH</h4>
         <p>Full gym access</p>
         <p>Personal training sessions</p>
         <p>Fitness guidance</p>
-        <a href="#" class="plan-btn">SELECT PLAN</a>
+        <a href="#" class="plan-btn" id="premiumBtn">SELECT PLAN</a>
     </div>
 
-    <div class="plan">
+    <div class="plan" id="annualPlan">
        <h3>ANNUAL</h3>
        <h4>KSH 10,000/YEAR</h4>
        <p>Full gym access</p>
         <p>Personal training sessions</p>
         <p>Fitness guidance</p>
-        <a href="#" class="plan-btn">SELECT PLAN</a> 
+        <a href="#" class="plan-btn" id="annualBtn">SELECT PLAN</a> 
     </div>
+    <p id="planMessage"></p>
 </section>
 
-<sectiion class="contact" id="contacts">
+<section class="contact" id="contacts">
     <h2>Contact Fitzone</h2>
     <p>Have questions or want to get in touch? Reach out to us!</p>
-    <form>
-        <input type="text" placeholder="Name" required>
-        <input type="email" placeholder="Email" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">SEND MESSAGE</button>
+    <form id="contactForm">
+        <input type="text" placeholder="Name" required id="name">
+        <input type="email" placeholder="Email" required id="email">
+        <textarea placeholder="Your Message" required id="message"></textarea>
+        <button type="submit">SUBMIT</button>
+        <p id="formMessage"></p>
     </form>
-</sectiion>
+</section>
 <footer>
     <h3>FITZONE</h3>
     <p>Train Harder. Live Stronger. Become Better.</p>
     <p>&copy; 2026 Fitzone Fitness Center. All rights reserved.</p>
 </footer>
+<script src="myScript.js"></script>
     </body>
 </html>
