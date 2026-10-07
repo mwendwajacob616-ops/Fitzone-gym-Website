@@ -25,6 +25,10 @@ body{
 }
 #navMenu.show{
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
 }
 nav{
    display:flex;
