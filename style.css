@@ -29,12 +29,21 @@ body{
     justify-content: center;
     gap: 25px;
     list-style: none;
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
 }
 nav{
    display:flex;
    justify-content: center; 
    align-items: center;
    padding:20px 50px;
+   position: sticky;
+   top: 0;
+   z-index: 1000;
 }
 nav h2{
     font-size: 24px;
@@ -48,6 +57,9 @@ ul{
     font-style: italic;
     font-weight: bold;
     font-size: larger;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 a{
     color: white;
