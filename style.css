@@ -22,6 +22,7 @@ body{
     font-weight: bold;
     border-style: none;
     margin-bottom: 10px;
+    margin-right: 20px;
 }
 #navMenu.show{
     display: flex;
@@ -64,6 +65,9 @@ ul{
 a{
     color: white;
     text-decoration: none;
+}
+a:hover{
+    color: orange;
 }
 .hero{
     height:500px;
