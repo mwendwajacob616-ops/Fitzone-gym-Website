@@ -42,6 +42,9 @@ aboutBtn.addEventListener("click", function(){
 
 
 const planMessage = document.querySelector("#planMessage");
+const premiumBtn = document.querySelector("#premiumBtn");
+const annualBtn = document.querySelector("#annualBtn");
+
 premiumBtn.addEventListener("click", function(event) {
     event.preventDefault();
     planMessage.textContent = "You selected the Premium plan.";
@@ -67,5 +70,3 @@ const navMenu = document.querySelector("#navMenu");
 menuBtn.addEventListener("click", function() {
     navMenu.classList.toggle("show");
 });
-
-
